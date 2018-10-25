@@ -1,0 +1,9 @@
+ext {
+    flinkVersion = '1.6.1'
+    scalaVersion = '2.11'
+
+    libs = [
+        flinkStreamingJava: "org.apache.flink:flink-streaming-java_$scalaVersion:$flinkVersion",
+        flinkStateBackendRocksDb: "org.apache.flink:flink-statebackend-rocksdb_$scalaVersion:$flinkVersion"    
+    ]
+}

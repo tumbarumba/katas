@@ -4,4 +4,5 @@ subprojects {
     }
 
     apply plugin: 'java'
+    apply from: "$rootDir/gradle/libraries.gradle"
 }

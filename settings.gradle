@@ -1,4 +1,5 @@
-include 'anagrams'
+include 'anagrams',
+        'streaming'
 
 rootProject.name = 'kata'
 

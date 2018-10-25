@@ -1,4 +1,4 @@
-package com.ubs.katas;
+package com.exubero.katas;
 
 import java.util.Arrays;
 
