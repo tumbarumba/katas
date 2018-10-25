@@ -1,0 +1,9 @@
+include 'anagrams'
+
+rootProject.name = 'kata'
+
+rootProject.children.each { it ->
+    def moduleName      = it.name
+    it.name             = "${rootProject.name}-${moduleName}"
+    it.buildFileName    = "${moduleName}.gradle"
+}
