@@ -1,3 +1,8 @@
 dependencies {
-    testCompile 'junit:junit:4.12'
+    testImplementation  libs.junitApi
+    testRuntimeOnly     libs.junitEngine
+}
+
+test {
+    useJUnitPlatform()
 }

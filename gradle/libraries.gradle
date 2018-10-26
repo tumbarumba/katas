@@ -1,9 +1,13 @@
 ext {
     flinkVersion = '1.6.1'
+    junitVersion = '5.3.1'
     scalaVersion = '2.11'
 
     libs = [
-        flinkStreamingJava: "org.apache.flink:flink-streaming-java_$scalaVersion:$flinkVersion",
-        flinkStateBackendRocksDb: "org.apache.flink:flink-statebackend-rocksdb_$scalaVersion:$flinkVersion"    
+        flinkStreamingJava:         "org.apache.flink:flink-streaming-java_$scalaVersion:$flinkVersion",
+        flinkStateBackendRocksDb:   "org.apache.flink:flink-statebackend-rocksdb_$scalaVersion:$flinkVersion",
+
+        junitApi:       "org.junit.jupiter:junit-jupiter-api:$junitVersion",
+        junitEngine:    "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
     ]
 }
