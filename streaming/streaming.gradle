@@ -1,3 +1,10 @@
+apply plugin: 'application'
+mainClassName = "com.exubero.streaming.WordCount"
+
 dependencies {
-    compile libs.flinkStreamingJava
+    implementation libs.flinkStreamingJava
+}
+
+jar.manifest {
+    attributes('Main-Class': mainClassName)
 }
